@@ -2,6 +2,10 @@ package org.ironmaple.simulation.seasonspecific.reefscape2025;
 
 import static org.wpilib.units.Units.*;
 
+import org.ironmaple.simulation.SimulatedArena;
+import org.ironmaple.simulation.gamepieces.GamePieceOnFieldSimulation;
+import org.ironmaple.simulation.gamepieces.GamePieceProjectile;
+import org.ironmaple.utils.FieldMirroringUtils;
 import org.wpilib.driverstation.Alliance;
 import org.wpilib.math.geometry.Pose2d;
 import org.wpilib.math.geometry.Rotation2d;
@@ -10,10 +14,6 @@ import org.wpilib.math.kinematics.ChassisVelocities;
 import org.wpilib.units.measure.Angle;
 import org.wpilib.units.measure.Distance;
 import org.wpilib.units.measure.LinearVelocity;
-import org.ironmaple.simulation.SimulatedArena;
-import org.ironmaple.simulation.gamepieces.GamePieceOnFieldSimulation;
-import org.ironmaple.simulation.gamepieces.GamePieceProjectile;
-import org.ironmaple.utils.FieldMirroringUtils;
 
 public class ReefscapeCoralOnFly extends GamePieceProjectile {
     public ReefscapeCoralOnFly(
@@ -91,8 +91,7 @@ public class ReefscapeCoralOnFly extends GamePieceProjectile {
                                 / 2,
                         getPositionAtTime(super.launchedTimer.get()).getZ()),
                 new Pose2d(
-                        getPositionAtTime(launchedTimer.get()).toTranslation2d(),
-                        initialLaunchingVelocity.getAngle()),
+                        getPositionAtTime(launchedTimer.get()).toTranslation2d(), initialLaunchingVelocity.getAngle()),
                 super.initialLaunchingVelocity));
     }
 }

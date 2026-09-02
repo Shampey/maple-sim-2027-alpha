@@ -3,16 +3,16 @@ package org.ironmaple.simulation.motorsims;
 import static org.wpilib.units.Units.Amps;
 import static org.wpilib.units.Units.Volts;
 
-import org.wpilib.driverstation.DriverStationErrors;
-import org.wpilib.math.filter.LinearFilter;
-import org.wpilib.units.measure.Current;
-import org.wpilib.units.measure.Voltage;
-import org.wpilib.simulation.BatterySim;
-import org.wpilib.simulation.RoboRioSim;
-import org.wpilib.smartdashboard.SmartDashboard;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Supplier;
+import org.wpilib.driverstation.DriverStationErrors;
+import org.wpilib.math.filter.LinearFilter;
+import org.wpilib.simulation.BatterySim;
+import org.wpilib.simulation.RoboRioSim;
+import org.wpilib.smartdashboard.SmartDashboard;
+import org.wpilib.units.measure.Current;
+import org.wpilib.units.measure.Voltage;
 
 /**
  *
